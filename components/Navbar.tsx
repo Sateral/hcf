@@ -27,6 +27,8 @@ const Navbar = () => {
 
   const menuStyle = "rounded-lg text-3xl font-medium font-lora ring-offset-background w-full p-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primaryBg text-secondaryBg hover:bg-[#D2D2D2]/70" 
 
+  const pathname = usePathname();
+
   const navInfo: { id: string, title: string }[] = [
     {
       id: "next-show",
@@ -70,8 +72,6 @@ const Navbar = () => {
   } else {
     document.body.style.overflow = 'auto';
   }
-
-  const pathname = usePathname();
 
   return (
     <nav className={`${pathname === "/" ? 'fixed' : 'sticky'} top-0 bg-primaryBg w-full flex sm:flex-row flex-col py-6 items-center md:px-16 px-6 z-10`}>
