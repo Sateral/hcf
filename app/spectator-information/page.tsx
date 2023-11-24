@@ -9,8 +9,8 @@ import { ChevronLeftCircle, ChevronRightCircle, XCircle } from "lucide-react";
 
 const Page = () => {
   const images = [
-    "/../public/assets/specInfo.png",
-    // "/../public/assets/admissionCoupon.png",
+    require("@/public/assets/specInfo.png"),
+    // "/../public/assets/admissionCoupon.png",require("@/public/assets/PIP.png")
   ];
 
   const lightboxModal = useLightBoxModal();
