@@ -4,6 +4,9 @@ import Image from "next/image";
 import { MouseEventHandler } from "react";
 import useLightBoxModal from "@/hooks/use-lightbox-modal";
 import Hero from "@/components/Hero";
+import image1 from "@/public/assets/flyer-front.jpg";
+import image2 from "@/public/assets/flyer-back.jpg";
+import image3 from "@/public/assets/theme.jpg";
 
 const Page = () => {
   const lightboxModal = useLightBoxModal();
@@ -38,11 +41,7 @@ const Page = () => {
     window.open(themeURL, "_blank");
   };
 
-  const images = [
-    "/../public/assets/flyer-front.jpg",
-    "/../public/assets/flyer-back.jpg",
-    "/../public/assets/theme.jpg",
-  ];
+  const images = [image1.src, image2.src, image3.src];
 
   return (
     <>
