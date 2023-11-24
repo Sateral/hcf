@@ -22,33 +22,13 @@ export const navLinks = [
 
   {
     id: "aims-and-objectives",
-    title: "Aims & Objectives"
+    title: "Aims & Objectives",
   },
   {
     id: "members",
     title: "Members",
   },
-]
-
-export const sponsors = [
-  {
-    sponsor: "Politically Incorrect Pets!",
-    id: "Door prize provided by:",
-    image: require("../public/assets/PIP.png"),
-  },
-
-  {
-    sponsor: "Purina Pro Plan",
-    id: "Best of the Best Prizes provided by:",
-    image: require("../public/assets/PPP.png"),
-  },
-
-  {
-    sponsor: "The Cat Clinic",
-    id: "Ring One Sponsored by:",
-    image: require("../public/assets/TCC.png"),
-  },
-]
+];
 
 export const showInfo = [
   {
@@ -110,36 +90,36 @@ export const showInfo = [
     header: "Anything else?",
     info: "Have fun! If you have questions, please ask the exhibitors. Some judges will explain what they're looking for throughout their process so find one you enjoy best from a handling or speaking perspective and have a seat.",
   },
-]
+];
 
 export const affiliates = [
   {
     name: "The Canadian Cat Association",
     info: "Canada's Registry of pedigreed cats. This site includes breeder listings, upcoming CCA shows as well as items of interest to the cat enthusiast",
-    image: require("@/public/assets/cca-afc.png")
+    image: require("@/public/assets/cca-afc.png"),
   },
 
   {
     name: "PAWSitive PAWS Cat Club",
     info: "A CCA Club located in Southwestern Ontario.The site contains information on club activities as well as information on its upcoming shows.",
-    image: require("@/public/assets/ppcc.jpg")
+    image: require("@/public/assets/ppcc.jpg"),
   },
 
   {
     name: "Burlington Humane Society",
     info: "Burlington Humane Society is a non profit organization of volunteers dedicated to the care and protection of stray and abandoned animals in the Burlington area",
-    image: require("@/public/assets/bhs.png")
+    image: require("@/public/assets/bhs.png"),
   },
 
   {
     name: "Animal Adoptions of Flambourough",
     info: "Animal Adoptions of Flamborough is a local registered charity.We feature a no-kill policy and the sole purpose of caring for lost,mistreated and abandoned animals in the Waterdown/Flamborough area.",
-    image: require("@/public/assets/aaf.png")
+    image: require("@/public/assets/aaf.png"),
   },
 
   {
     name: "Neveah's Charity of West Lincoln - Cat Rescue",
     info: "NCWL is small group of volunteers who are determined to help care for abandoned, neglected and unwanted (high volume shelter(s) cats in West Lincoln and surrounding areas. This group of volunteers dedicates their time and energy with receiving only two rewards: great pride in rescuing cats and earning the satisfaction that we did a good thing.",
-    image: require("@/public/assets/ncwl.jpg")
+    image: require("@/public/assets/ncwl.jpg"),
   },
-]
+];
