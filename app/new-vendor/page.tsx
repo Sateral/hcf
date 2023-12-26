@@ -3,7 +3,7 @@
 import Hero from "@/components/Hero";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -39,12 +39,12 @@ const page = () => {
 
           <div className="sm:pt-8 py-6 sm:text-2xl text-xl max-w-[950px]">
             <p className="font-light">
-              Join us at the Hamilton Cat Fanciers' Annual Cat Show on March
-              16-17, 2024, at ANCASTER FAIRGROUNDS. This family-friendly event,
-              themed 'Cat Minions,' attracts 3000+ visitors. Showcase your
-              products to a cat-loving audience and benefit from active social
-              media promotion. Download the PDF for details and more
-              information. We look forward to welcoming you to our event!
+              Join us at the Hamilton Cat Fanciers&apos; Annual Cat Show on
+              March 16-17, 2024, at ANCASTER FAIRGROUNDS. This family-friendly
+              event, themed &apos;Cat Minions,&apos; attracts 3000+ visitors.
+              Showcase your products to a cat-loving audience and benefit from
+              active social media promotion. Download the PDF for details and
+              more information. We look forward to welcoming you to our event!
             </p>
           </div>
 
@@ -62,4 +62,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
