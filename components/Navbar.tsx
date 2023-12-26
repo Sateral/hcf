@@ -47,6 +47,10 @@ const Navbar = () => {
       id: "map-and-directions",
       title: "Maps & Directions",
     },
+    {
+      id: "new-vendor",
+      title: "Interested in Becoming a Vendor?",
+    },
   ];
 
   const navAbout: { id: string; title: string }[] = [

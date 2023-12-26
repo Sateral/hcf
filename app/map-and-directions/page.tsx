@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import React from "react";
 import Image from "next/image";
@@ -5,6 +7,16 @@ import Image from "next/image";
 import Map from "@/public/assets/map.jpg";
 
 const page = () => {
+  const mapDownload = () => {
+    const flyerEng = "/assets/map.jpg";
+    const link = document.createElement("a");
+    link.href = flyerEng;
+    link.setAttribute("download", "Map_to_show.jpg");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <Hero pageTitle="Map &" sub="Directions" />
@@ -84,7 +96,10 @@ const page = () => {
             className="my-4 rounded-lg shadow-md"
           />
 
-          <button className="border-secondaryBg border-2 w-64 h-16 lg:mt-0 mt-4 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer">
+          <button
+            className="border-secondaryBg border-2 w-64 h-16 lg:mt-0 mt-4 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer"
+            onClick={mapDownload}
+          >
             <p className="font-kulim sm:text-xl text-lg">
               Print your own <br /> Map & Directions
             </p>

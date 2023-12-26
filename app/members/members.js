@@ -17,8 +17,8 @@ export const members = [
   {
     name: "Karen Miksza",
     cattery: "Mikkara",
-    breed: "Cornish Rex",
-    email: "mikkara@quickclic.net",
+    breed: "Japanese Bobtails, Cornish Rex",
+    email: "mikkarakats@gmail.com",
   },
 
   {
@@ -43,9 +43,9 @@ export const members = [
   },
 
   {
-    name: "Kathy Early & Derrick Arnd",
+    name: "Kathy Early & Derrick Arndt",
     cattery: "",
     breed: "Household Pets",
-    email: "",
+    email: "gogokat@live.ca",
   },
 ];

@@ -43,17 +43,17 @@ export const showInfo = [
 
   {
     header: "Can visitors touch the cats?",
-    info: "An admission discount coupon is available on this club website! We accept printed coupons or digital proof of coupon.",
+    info: "No, not without permission from the owner. The owner may allow you to touch their cat but may also ask you to disinfect your hands first. Wipes and hand sanitizer is available at the show or the owner may have their own.",
   },
 
   {
     header: "Can I bring my cat (or any pet) to the show? ",
-    info: "WNo, only cats pre-registered may enter the show hall.",
+    info: "No, only cats pre-registered may enter the show hall.",
   },
 
   {
     header: "What happens at a cat show?",
-    info: "The show has 4 judges each day evaluating the cats in a continuous cycle. All judges evaluate all of the cats entered. Think of it like an individual cat show in each ring and opinions of the judges may differ. The highest scoring entries for each day receive awards called Best of the Best. A presentation of the Best of the Best awards happens at noon on Sunday.",
+    info: "The show has 4 judges each day evaluating the cats in a continuous cycle. Each judge evaluates the cats entered. Think of it as an individual cat show in each ring and the opinions of the judges may differ. The highest scoring entries for each day receive awards called Best of the Best. A presentation of the Best of the Best awards happens at noon on Sunday.",
   },
 
   {
@@ -68,12 +68,12 @@ export const showInfo = [
 
   {
     header: "Can I buy a kitten or cat at the show?",
-    info: "Some exhibitors may have kittens or adults for sale. Sometimes breeders will bring them to the show, but others may leave their cats at home. Look for signs that read Cats or Kittens for sale. Please note that all kittens must be 3 months old to be in the show hall.",
+    info: "Some exhibitors may have kittens or adults for sale. Sometimes breeders will bring them to the show, while others may make arrangements for home visits instead. Look for signs that read Cats or Kittens for sale. Please note that all kittens must be 3 months old to be in the show hall.",
   },
 
   {
     header: "What else is at the show?",
-    info: "Each paid admission receives a chance to win the door prize. Our show has raffles throughout both days. On Saturday some exhibitors will be wearing costumes and have decorated cages for a chance to win prizes. On Sunday morning there is an educational presentation about cats at 10:30 am by a veterinarian who specializes in cats. At noon the winners from Saturday’s show are presented. Later on Sunday at 2 pm there is a costumed cat contest which is decided by our spectators.",
+    info: "Each paid admission receives a chance to win the door prize. Our show has raffles throughout both days. Informative and fun presentations are scheduled for both days. Check back to see what is on offer.",
   },
 
   {
@@ -83,7 +83,7 @@ export const showInfo = [
 
   {
     header: "Is there food available for visitors?",
-    info: "Yes, people food is available at the show",
+    info: "Yes, people food is available at the show.",
   },
 
   {

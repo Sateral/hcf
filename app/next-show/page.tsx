@@ -20,25 +20,23 @@ const Page = () => {
   };
 
   const flyerEng = () => {
-    const engFlyerURL =
-      "https://www.hamiltoncatshow.ca/Images_2023/hcf_2023_flyer_EN.pdf";
-    window.open(engFlyerURL, "_blank");
-  };
-
-  const flyerFr = () => {
-    const frFlyerURL = "/assets/HCF_2023_flyer_FR.pdf";
+    const flyerEng = "/assets/hcf_2024_flyer REVISED JUDGES.pdf";
     const link = document.createElement("a");
-    link.href = frFlyerURL;
-    link.setAttribute("download", "HCF_2023_flyer_FR.pdf");
+    link.href = flyerEng;
+    link.setAttribute("download", "hcf_2024_flyer.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const theme = () => {
-    const themeURL =
-      "https://www.hamiltoncatshow.ca/Images_2023/steampunk_cats_contest.pdf";
-    window.open(themeURL, "_blank");
+    const theme = "/assets/theme.jpg";
+    const link = document.createElement("a");
+    link.href = theme;
+    link.setAttribute("download", "theme.jpg");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const images = [image1.src, image2.src, image3.src];
@@ -73,15 +71,6 @@ const Page = () => {
             className="border-secondaryBg border-2 sm:w-64 w-96 h-16 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer"
           >
             <p className="font-kulim sm:text-xl text-lg">Download Flyer PDF</p>
-          </button>
-
-          <button
-            onClick={flyerFr}
-            className="border-secondaryBg border-2 sm:w-72 w-96 h-16 sm:my-0 my-8 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer"
-          >
-            <p className="font-kulim sm:text-xl text-lg">
-              Download French Flyer Version
-            </p>
           </button>
 
           <button

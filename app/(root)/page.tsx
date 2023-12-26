@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/dialog";
 import NextShow from "./components/NextShow";
 import OurSponsors from "./components/OurSponsors";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -37,7 +38,9 @@ export default function Home() {
           <p className="text-secondaryBg font-catamaran text-xl">
             Proudly affiliated with
           </p>
-          <Image src={cca} alt="CCA-AFC Logo" className="w-12" />
+          <Link href="https://www.cca-afc.com/" target="_blank">
+            <Image src={cca} alt="CCA-AFC Logo" className="w-12" />
+          </Link>
         </div>
       </section>
 
@@ -49,31 +52,49 @@ export default function Home() {
         <div className="flex justify-center items-center md:flex-row flex-col sm:pt-16 pt-6 md:pb-0 sm:pb-16 pb-6">
           <div className="flex-1 flex justify-center items-center flex-col sm:px-16 px-4">
             <div className="text-secondaryBg font-catamaran md:text-3xl text-2xl">
-              <h2 className="font-caudex font-bold lg:text-7xl md:text-5xl ss:text-6xl text-5xl">
-                Community <br />{" "}
+              <h2 className="font-caudex font-bold text-secondaryBg lg:text-7xl md:text-5xl ss:text-6xl text-5xl">
+                Local Community <br />{" "}
                 <span className="text-primaryText">Involvement</span>
               </h2>
 
-              <p className="py-8">
-                The Hamilton Cat Fanciers were pleased to be able to assist
-                three of the area&apos;s animal rescue groups again in 2019.(Our
-                March 2020, 2021 & 2022 shows were cancelled due to Covid
-                resrictions) as donation of $1,500 was divided between:
+              <p className="py-8 text-secondaryBg sm:text-2xl text-xl">
+                Through the success of the Hamilton Cat Fanciers&apos; annual
+                show the club can donate to local cat and kitten rescue groups.
+                The club is proud of our contributions which has assisted these
+                charities in their efforts to take care of and find homes for
+                unwanted and abandoned cats and kittens:
               </p>
 
-              <ul className="custom-list-disc ml-8 text-4xl font-caudex text-clip text-">
-                <li className="mb-8">Animal Adoptions of Flamborough</li>
-                <li>Neveah&apos;s Charity of West Lincoln Cat Rescue</li>
+              <ul className="custom-list-disc ml-8 font-caudex text-clip text-secondaryBg sm:text-3xl text-2xl">
+                <li className="mb-8">
+                  <Link href="https://anadoptflam.com">
+                    Animal Adoptions of Flamborough
+                  </Link>
+                </li>
+                <li className="mb-8">
+                  <Link href="https://burlingtonhumane.ca/">
+                    Burlington Humane Society
+                  </Link>
+                </li>
+                <li className="mb-8">
+                  <Link href="https://hbspca.com/">
+                    Hamilton / Burlington SPCA
+                  </Link>
+                </li>
+                <li className="mb-8">
+                  <Link href="https://ncwl.weebly.com/">
+                    Neveah&apos;s Charity of West Lincoln Cat Rescue
+                  </Link>
+                </li>
+                <li className="mb-8">
+                  Animal Welfare Association of Hamilton (until operation
+                  discontinued 2016)
+                </li>
               </ul>
-
-              <p className="pt-8 md:hidden">
-                to assist them in their efforts to take care of, and find homes
-                for unwanted and abandoned cats.
-              </p>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-start md:ml-10 ml-0 md:mt-0 mt-10 px-8">
+          <div className="flex-1 flex flex-col justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 px-8">
             <Image
               src={catPlaying}
               className="w-[650px] rounded-3xl catShadow"
@@ -81,13 +102,6 @@ export default function Home() {
               alt="Orange tabby cat playing in the grass"
             />
           </div>
-        </div>
-
-        <div className="text-secondaryBg font-catamaran md:text-3xl text-2xl md:px-16 px-4 minHidden">
-          <p className="sm:pb-16 pb-6 pt-6">
-            to assist them in their efforts to take care of, and find homes for
-            unwanted and abandoned cats.
-          </p>
         </div>
       </section>
 

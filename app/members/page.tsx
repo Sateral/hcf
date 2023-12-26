@@ -16,7 +16,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <Hero pageTitle="Frequently" sub="Asked Questions" />
+      <Hero pageTitle="Members" sub="of HCF" />
 
       <section className="flex justify-center items-center sm:py-16 py-6 lg:px-64 px-2 bg-[#E8EBF2] text-secondaryBg">
         <Table>

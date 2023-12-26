@@ -26,6 +26,16 @@ const NextShow = () => {
     return null;
   }
 
+  const downloadCoupon = () => {
+    const flyerEng = "/assets/2024_Coupon.pdf";
+    const link = document.createElement("a");
+    link.href = flyerEng;
+    link.setAttribute("download", "AdmissionCoupon.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex justify-center items-center md:flex-row flex-col sm:py-16 py-6 bg-[#D9D9D9]">
       <div className="flex-2 flex flex-col justify-center items-start md:ml-10 ml-0 md:mt-0 mt-10 md:order-1 order-2 md:px-0 ss:px-16 px-4">
@@ -58,7 +68,14 @@ const NextShow = () => {
             </p>
           </div>
 
-          <Dialog>
+          <Button
+            className="md:p-8 p-4 md:text-4xl text-xl"
+            onClick={downloadCoupon}
+          >
+            Click for Discount on Admission Coupon
+          </Button>
+
+          {/* <Dialog>
             <DialogTrigger>
               <Button className="md:p-8 p-4 md:text-4xl text-xl">
                 Click for Discount on Admission Coupon
@@ -71,7 +88,7 @@ const NextShow = () => {
                 check back soon!
               </DialogDescription>
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
         </div>
       </div>
     </div>
