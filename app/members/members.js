@@ -22,13 +22,6 @@ export const members = [
   },
 
   {
-    name: "Katrina Postma",
-    cattery: "",
-    breed: "Oriental Shorthair",
-    email: "kpostma@hotmail.ca",
-  },
-
-  {
     name: "Barb & David Sanderson",
     cattery: "",
     breed: "Maine Coon Alters",
