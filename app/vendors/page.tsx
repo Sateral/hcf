@@ -9,9 +9,10 @@ import { ChevronLeftCircle, ChevronRightCircle, XCircle } from "lucide-react";
 
 const Page = () => {
   const images = [
-    require("@/public/assets/HCF poster 2024.jpg"),
-    require("@/public/assets/HCF 2024 PRESENTATIONS.jpg"),
-    require("@/public/assets/2024_Coupon.jpg"),
+    require("@/public/assets/vendors/vendors_page-0001.jpg"),
+    require("@/public/assets/vendors/vendors_page-0002.jpg"),
+    require("@/public/assets/vendors/vendors_page-0003.jpg"),
+    require("@/public/assets/vendors/vendors_page-0004.jpg"),
   ];
 
   const lightboxModal = useLightBoxModal();
@@ -26,7 +27,7 @@ const Page = () => {
 
   return (
     <>
-      <Hero pageTitle="Spectator" sub="Information" />
+      <Hero pageTitle="Vendors" sub="of the show" />
 
       <div className="flex flex-col sm:py-16 py-6 px-16 bg-[#D9D9D9] text-secondaryBg">
         <h2 className="w-full text-center font-caudex text-4xl text-secondaryBg font-bold">

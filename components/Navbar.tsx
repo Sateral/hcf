@@ -51,6 +51,10 @@ const Navbar = () => {
       id: "new-vendor",
       title: "Interested in Becoming a Vendor?",
     },
+    {
+      id: "vendors",
+      title: "Vendors",
+    },
   ];
 
   const navAbout: { id: string; title: string }[] = [
