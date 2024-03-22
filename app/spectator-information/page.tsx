@@ -11,6 +11,7 @@ const Page = () => {
   const images = [
     require("@/public/assets/HCF poster 2024.jpg"),
     require("@/public/assets/HCF 2024 PRESENTATIONS.jpg"),
+    require("@/public/assets/HCF_vendor list 2024.jpg"),
     require("@/public/assets/2024_Coupon.jpg"),
   ];
 
