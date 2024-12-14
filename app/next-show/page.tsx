@@ -4,9 +4,8 @@ import Image from "next/image";
 import { MouseEventHandler } from "react";
 import useLightBoxModal from "@/hooks/use-lightbox-modal";
 import Hero from "@/components/Hero";
-import image1 from "@/public/assets/flyer-front.jpg";
-import image2 from "@/public/assets/flyer-back.jpg";
-import image3 from "@/public/assets/theme.jpg";
+import image1 from "@/public/assets/hcf_2025_flyer ENGLISH1.jpg";
+import image2 from "@/public/assets/hcf_2025_flyer ENGLISH2.jpg";
 
 const Page = () => {
   const lightboxModal = useLightBoxModal();
@@ -30,16 +29,16 @@ const Page = () => {
   };
 
   const theme = () => {
-    const theme = "/assets/theme.jpg";
+    const theme = "/assets/hcf_2025_flyer ENGLISH.pdf";
     const link = document.createElement("a");
     link.href = theme;
-    link.setAttribute("download", "theme.jpg");
+    link.setAttribute("download", "hcf_2025_flyer ENGLISH.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const images = [image1.src, image2.src, image3.src];
+  const images = [image1.src, image2.src];
 
   return (
     <>
@@ -66,12 +65,12 @@ const Page = () => {
         </div>
 
         <div className="flex justify-around items-center sm:flex-row flex-col text-secondaryBg">
-          <button
+          {/* <button
             onClick={flyerEng}
             className="border-secondaryBg border-2 sm:w-64 w-96 h-16 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer"
           >
             <p className="font-kulim sm:text-xl text-lg">Download Flyer PDF</p>
-          </button>
+          </button> */}
 
           <button
             onClick={theme}

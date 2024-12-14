@@ -60,7 +60,7 @@ const NextShow = () => {
           </h2>
           <div className="md:text-4xl sm:text-xl text-lg">
             <p className="py-8">
-              Saturday, March 16 & Sunday, March 17 2024 at the Ancaster
+              Saturday, March 15 & Sunday, March 16 2025 at the Ancaster
               Fairgrounds
             </p>
             <p className="xl:mb-32 lg:mb-16 md:mb-4 mb-12">
