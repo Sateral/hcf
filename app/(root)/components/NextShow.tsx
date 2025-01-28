@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-import fairgrounds from "@/public/assets/fairgrounds.webp";
-import { MapPin } from "lucide-react";
+import fairgrounds from '@/public/assets/fairgrounds.webp';
+import { MapPin } from 'lucide-react';
 
 import {
   Dialog,
@@ -12,8 +12,8 @@ import {
   DialogDescription,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
 
 const NextShow = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -27,10 +27,10 @@ const NextShow = () => {
   }
 
   const downloadCoupon = () => {
-    const flyerEng = "/assets/2024_Coupon.pdf";
-    const link = document.createElement("a");
+    const flyerEng = '/2025-03/HCF_web coupon 2025.pdf';
+    const link = document.createElement('a');
     link.href = flyerEng;
-    link.setAttribute("download", "AdmissionCoupon.pdf");
+    link.setAttribute('download', 'AdmissionCoupon.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -55,7 +55,7 @@ const NextShow = () => {
       <div className="flex-1 flex justify-center items-center flex-col sm:px-16 px-6 md:order-2 order-1">
         <div className="text-secondaryBg font-catamaran font-bold md:text-3xl ss:text-4xl text-2xl lg:min-w-[470px] md:min-w-[370px]">
           <h2 className="font-caudex lg:text-6xl ss:text-5xl text-4xl">
-            Attend Our Next <br />{" "}
+            Attend Our Next <br />{' '}
             <span className="text-primaryText">Cat Show</span>
           </h2>
           <div className="md:text-4xl sm:text-xl text-lg">

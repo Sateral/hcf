@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 function Donation() {
   const DonationSection = () => {
@@ -13,7 +13,7 @@ function Donation() {
 
     useEffect(() => {
       if (inView) {
-        const targetAmount = 45075; // Replace with your target amount
+        const targetAmount = 47775; // Replace with your target amount
         const startAmount = 40000; // Replace with your starting amount
 
         const animationDuration = 1500; // Adjust the duration of the animation in milliseconds
