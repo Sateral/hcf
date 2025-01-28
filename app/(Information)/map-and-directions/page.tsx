@@ -1,17 +1,15 @@
-"use client";
+'use client';
 
-import Hero from "@/components/Hero";
-import React from "react";
-import Image from "next/image";
-
-import Map from "@/public/assets/map.jpg";
+import Hero from '@/components/Hero';
+import React from 'react';
+import Image from 'next/image';
 
 const page = () => {
   const mapDownload = () => {
-    const flyerEng = "/assets/map.jpg";
-    const link = document.createElement("a");
+    const flyerEng = '/assets/map.jpg';
+    const link = document.createElement('a');
     link.href = flyerEng;
-    link.setAttribute("download", "Map_to_show.jpg");
+    link.setAttribute('download', 'Map_to_show.jpg');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -36,13 +34,13 @@ const page = () => {
             <p>
               <span className="font-semibold">From Toronto</span> take the QEW
               (west) toward Hamilton, then take 403 Hamilton (right lanes),
-              continue up the escarpment{" "}
+              continue up the escarpment{' '}
               <span className="font-semibold">
                 exit at Hwy 52 - Copetown (Exit 55)
               </span>
-              , at the end of the exit ramp turn left onto Hwy 52{" "}
+              , at the end of the exit ramp turn left onto Hwy 52{' '}
               <span className="font-semibold">(Trinity Road)</span>, proceed
-              south just over 1 km (through lights at Hwy 2) to the{" "}
+              south just over 1 km (through lights at Hwy 2) to the{' '}
               <span className="font-semibold">Ancaster Fairground</span> on the
               right
             </p>
@@ -54,17 +52,17 @@ const page = () => {
 
             <p>
               <span className="font-semibold">From Niagara</span> take the QEW
-              toward Hamilton{" "}
+              toward Hamilton{' '}
               <span className="font-semibold">
                 take Red Hill Valley Parkway exit, follow Parkway, (at the top
                 of the mountain the name changes to the Lincoln Alexander
                 Parkway), continue to 403, take 403 west (toward Brantford) exit
                 at Hwy 52 - Copetown (Exit 55)
               </span>
-              , at the end of the ramp{" "}
-              <span className="font-semibold">turn left</span> onto Hwy 52{" "}
+              , at the end of the ramp{' '}
+              <span className="font-semibold">turn left</span> onto Hwy 52{' '}
               <span>(Trinity Road)</span>, proceed south just over 1 km (through
-              lights at Hwy 2) to the{" "}
+              lights at Hwy 2) to the{' '}
               <span className="font-semibold">Ancaster Fairground</span> on the
               right.
             </p>
@@ -73,12 +71,12 @@ const page = () => {
               <span className="font-semibold">
                 From London, Brantford and points west
               </span>
-              , take 403 (east),{" "}
-              <span className="font-semibold">exit at HWY 52</span> - Copetown{" "}
-              <span className="font-semibold">(Exit 55)</span>, turn{" "}
-              <span>right</span> at end of the ramp onto HWY 52{" "}
+              , take 403 (east),{' '}
+              <span className="font-semibold">exit at HWY 52</span> - Copetown{' '}
+              <span className="font-semibold">(Exit 55)</span>, turn{' '}
+              <span>right</span> at end of the ramp onto HWY 52{' '}
               <span className="font-semibold">(Trinity Road)</span>, proceed
-              south just over 1 km (through lights at Hwy 2) to the{" "}
+              south just over 1 km (through lights at Hwy 2) to the{' '}
               <span className="font-semibold">Ancaster Fairground</span> on the
               right.
             </p>
@@ -89,7 +87,7 @@ const page = () => {
           <h3 className="font-semibold text-2xl">Map to the Show</h3>
 
           <Image
-            src={Map}
+            src={'/assets/map.jpg'}
             width={600}
             height={400}
             alt="Map to the Show"

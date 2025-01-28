@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
-import React from "react";
+import Hero from '@/components/Hero';
+import React from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { Objectives } from "@/app/aims-and-objectives/objectives";
+import { Objectives } from './objectives';
 
 const page = () => {
   return (
@@ -27,7 +27,7 @@ const page = () => {
           >
             <div
               className={`bg-[#D9D9D9] md:h-64 xs:h-48 sm:w-[850px] xs:w-[400px] w-[250px] flex justify-center items-center rounded-bl-3xl sm:rounded-tl-3xl rounded-tl-none sm:rounded-br-none rounded-br-3xl sm:order-1 order-2 ${
-                index === 2 ? "h-96" : "h-48"
+                index === 2 ? 'h-96' : 'h-48'
               }`}
             >
               <p className="xlg:px-24 px-8">{objective.aim}</p>

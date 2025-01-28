@@ -49,7 +49,7 @@ const Lightbox = ({ children, className }: Props) => {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen]);
+  }, [isOpen, nextImage, prevImage]);
 
   // Zoom functionality
   const zoomIn = () => setScale((prevScale) => Math.min(prevScale + 0.2, 3));

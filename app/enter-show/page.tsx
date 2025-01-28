@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero";
-import React from "react";
+import Hero from '@/components/Hero';
+import React from 'react';
 
-import { Objectives } from "@/app/aims-and-objectives/objectives";
-import Link from "next/link";
+import { Objectives } from '@/app/(About Us)/aims-and-objectives/objectives';
+import Link from 'next/link';
 
 const page = () => {
   return (
