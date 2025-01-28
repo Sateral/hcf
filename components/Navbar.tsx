@@ -50,6 +50,10 @@ const Navbar = () => {
       title: 'Maps & Directions',
     },
     {
+      id: 'sponsors',
+      title: 'Show Sponsors',
+    },
+    {
       id: 'new-vendor',
       title: 'Interested in Becoming a Vendor?',
     },
@@ -88,25 +92,25 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 bg-primaryBg w-full flex sm:flex-row flex-col items-center justify-center h-20 md:px-16 px-6 z-10 shadow-lg`}
     >
-      <div className='flex justify-between items-center w-full z-20'>
-        <Link href='/' className='flex flex-row items-center text-secondaryBg'>
+      <div className="flex justify-between items-center w-full z-20">
+        <Link href="/" className="flex flex-row items-center text-secondaryBg">
           {/* <Cat size={32} className="mr-2 navHidden" /> */}
           <Image
             src={logo}
-            alt='HCF Logo'
-            className='w-[70px] mr-2'
+            alt="HCF Logo"
+            className="w-[70px] mr-2"
             onClick={() => setToggle(false)}
           />
-          <h2 className='font-lora font-semibold md:text-3xl text-2xl navHidden'>
+          <h2 className="font-lora font-semibold md:text-3xl text-2xl navHidden">
             Hamilton Cat Fanciers
           </h2>
         </Link>
 
-        <div className='flex flex-row navHidden text-secondaryBg'>
-          <NavigationMenu className='md:mr-6 mr-2'>
+        <div className="flex flex-row navHidden text-secondaryBg">
+          <NavigationMenu className="md:mr-6 mr-2">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href='/'>
+                <Link href="/">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Home
                   </NavigationMenuLink>
@@ -115,7 +119,7 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <NavigationMenu className='md:mr-6 mr-2'>
+          <NavigationMenu className="md:mr-6 mr-2">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Information</NavigationMenuTrigger>
@@ -134,7 +138,7 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <NavigationMenu className='md:mr-6 mr-2'>
+          <NavigationMenu className="md:mr-6 mr-2">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
@@ -154,14 +158,14 @@ const Navbar = () => {
           </NavigationMenu>
 
           <Button asChild>
-            <Link href='/enter-show'>Enter Show</Link>
+            <Link href="/enter-show">Enter Show</Link>
           </Button>
         </div>
 
         <Image
           src={toggle ? close : menu}
-          alt='menu'
-          className='w-[28px] h-[28px] object-contain cursor-pointer sm:hidden'
+          alt="menu"
+          className="w-[28px] h-[28px] object-contain cursor-pointer sm:hidden"
           onClick={() => setToggle(!toggle)}
         />
       </div>
@@ -172,7 +176,7 @@ const Navbar = () => {
       >
         <ul>
           <li className={menuStyle} onClick={() => setToggle(false)}>
-            <Link href='/'>Home</Link>
+            <Link href="/">Home</Link>
           </li>
 
           {navInfo.map((option) => (
@@ -199,7 +203,7 @@ const Navbar = () => {
             className={`mt-4 hover: ${menuStyle}`}
             onClick={() => setToggle(false)}
           >
-            <Link href='/enter-show'>Enter Show</Link>
+            <Link href="/enter-show">Enter Show</Link>
           </li>
         </ul>
       </div>

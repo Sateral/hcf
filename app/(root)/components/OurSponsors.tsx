@@ -1,40 +1,35 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+} from '@/components/ui/carousel';
+import { link } from 'fs';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const OurSponsors = () => {
   const sponsors = [
     {
-      sponsor: "Wheatley Wares",
-      id: "Sponsoring 2 judging rings!",
-      image: require("@/public/assets/Wheatley Wares logo.png"),
-      link: "https://wheatleywares.com",
+      sponsor: 'Wheatley Wares',
+      id: 'Sponsoring the BEST OF THE BEST AWARDS',
+      image: '/assets/Wheatley Wares logo.png',
+      link: 'https://wheatleywares.com',
     },
     {
-      sponsor: "Village Cat Clinic",
-      id: "Sponsoring 1 judging ring!",
-      image: require("@/public/assets/Village Cat Clinic logo.jpg"),
-      link: "https://thecatclinic.ca",
+      sponsor: 'Farmina',
+      id: 'Sponsoring 2 judging rings!',
+      image: '/2025-03/sponsors/Farmina logo.jpg',
+      link: 'https://www.farmina.com/ca',
     },
     {
-      sponsor: "The Cat Clinic",
-      id: "Sponsoring 1 judging ring!",
-      image: require("@/public/assets/The Cat Clinic logo.jpg"),
-      link: "https://thecatclinic.ca",
-    },
-    {
-      sponsor: "Big Country Raw",
-      id: "Sponsoring the Best of the Best:",
-      image: require("@/public/assets/big-country-raw.jpg"),
-      link: "https://bigcountryraw.ca",
+      sponsor: 'Global Pet Foods',
+      id: 'Sponsoring 1 judging ring and the Door Prize!',
+      image: '/2025-03/sponsors/GPF logos.png',
+      link: 'https://globalpetfoods.com',
     },
   ];
 
@@ -54,8 +49,9 @@ const OurSponsors = () => {
                 <Card>
                   <CardContent className="p-5 flex flex-col items-center gap-8">
                     <Image
-                      src={sponsor.image.default}
+                      src={sponsor.image}
                       alt={sponsor.sponsor}
+                      height={250}
                       width={250}
                       className="rounded-sm"
                     />

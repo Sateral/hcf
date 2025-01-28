@@ -27,17 +27,17 @@ const Lightbox = ({ children, className }: Props) => {
     setScale(1); // Reset zoom level on close
   };
 
-  const nextImage = () => {
+  const nextImage = React.useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
     setScale(1); // Reset zoom level when navigating
-  };
+  }, [items.length]);
 
-  const prevImage = () => {
+  const prevImage = React.useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? items.length - 1 : prevIndex - 1
     );
     setScale(1); // Reset zoom level when navigating
-  };
+  }, [items.length]);
 
   // Keyboard navigation
   useEffect(() => {

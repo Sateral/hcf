@@ -123,3 +123,24 @@ export const affiliates = [
     image: require('@/public/assets/ncwl.jpg'),
   },
 ];
+
+export const sponsors = [
+  {
+    sponsor: 'Wheatley Wares',
+    id: 'Sponsoring the BEST OF THE BEST AWARDS',
+    image: '/assets/Wheatley Wares logo.png',
+    link: 'https://wheatleywares.com',
+  },
+  {
+    sponsor: 'Farmina',
+    id: 'Sponsoring 2 judging rings!',
+    image: '/2025-03/sponsors/Farmina logo.jpg',
+    link: 'https://www.farmina.com/ca',
+  },
+  {
+    sponsor: 'Global Pet Foods',
+    id: 'Sponsoring 1 judging ring and the Door Prize!',
+    image: '/2025-03/sponsors/GPF logos.png',
+    link: 'https://globalpetfoods.com',
+  },
+];
