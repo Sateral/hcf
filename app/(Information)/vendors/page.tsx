@@ -29,7 +29,7 @@ const Page = () => {
               width={500}
               height={300}
               alt="flyer"
-              className="hover:cursor-pointer rounded-xl border-[#3E3E3E] border-4 w="
+              className="hover:cursor-pointer rounded-xl border-[rgb(62,62,62)] border-4 w="
             />
           ))}
         </Lightbox>

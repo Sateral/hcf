@@ -28,7 +28,7 @@ const Page = () => {
   };
 
   const theme = () => {
-    const theme = '/assets/hcf_2025_flyer ENGLISH.pdf';
+    const theme = '/2025-03/hcf_2025_flyer revised judges.pdf';
     const link = document.createElement('a');
     link.href = theme;
     link.setAttribute('download', 'hcf_2025_flyer ENGLISH.pdf');
@@ -38,8 +38,8 @@ const Page = () => {
   };
 
   const images = [
-    '/assets/hcf_2025_flyer ENGLISH1.jpg',
-    '/assets/hcf_2025_flyer ENGLISH2.jpg',
+    '/2025-03/hcf_2025_flyer revised 1.jpg',
+    '/2025-03/hcf_2025_flyer revised 2.jpg',
     '/2025-03/HCF poster 2025.jpg',
   ];
 
@@ -47,12 +47,16 @@ const Page = () => {
     <>
       <Hero pageTitle="Next" sub="Show" />
 
-      <div className="bg-[#E8EBF2] flex flex-col sm:py-16 py-6">
-        <h2 className="w-full text-center font-caudex text-4xl text-secondaryBg font-bold">
-          Click on the flyer to expand
-        </h2>
+      <div className="flex flex-col justify-center items-center sm:py-16 py-6 px-16 bg-[#E8EBF2] text-secondaryBg">
+        <div className="text-start w-full">
+          <h2 className="w-full text-left text-5xl text-secondaryBg font-bold">
+            Event Flyers
+          </h2>
+          <h3 className="text-2xl">Click on the flyers to expand</h3>
+        </div>
 
-        <Lightbox className="flex justify-center items-center md:flex-row flex-col md:gap-16 gap-8 sm:py-16 py-6 px-4 flex-wrap">
+        {/* <Lightbox className="flex justify-center items-center md:flex-row flex-col md:gap-16 gap-8 sm:py-16 py-6 px-4 flex-wrap"> */}
+        <Lightbox className="grid grid-cols-1  md:grid-cols-3 gap-6 w-full py-6 justify-items-center">
           {images.map((image, index) => (
             <Image
               src={image}

@@ -37,7 +37,7 @@ export const members = [
 
   {
     name: 'Kathy Early & Derrick Arndt',
-    cattery: '',
+    cattery: 'Wyldkatz',
     breed: 'Household Pets',
     email: 'gogokat@live.ca',
   },
