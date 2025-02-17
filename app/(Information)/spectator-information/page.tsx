@@ -9,7 +9,10 @@ import { Button } from '@/components/ui/button';
 import Lightbox from '@/components/lightbox';
 
 const Page = () => {
-  const images = ['/2025-03/HCF_web coupon 2025.jpg'];
+  const images = [
+    '/2025-03/HCF_web coupon 2025.jpg',
+    '/2025-03/HCFevent poster 2025.jpg',
+  ];
 
   const downloadPDF = (path: string) => {
     const link = document.createElement('a');
