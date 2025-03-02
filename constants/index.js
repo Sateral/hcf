@@ -143,4 +143,16 @@ export const sponsors = [
     image: '/2025-03/sponsors/GPF logos.png',
     link: 'https://globalpetfoods.com',
   },
+  {
+    sponsor: 'Village Cat Clinic',
+    id: "Exhibiors' Morning Coffee Sponsor",
+    image: '/2025-03/sponsors/TheCatClinic.png',
+    link: 'https://www.thecatclinic.ca/',
+  },
+  {
+    sponsor: 'Harlow Blend Pet Foods',
+    id: 'Judging Ring Sponsor',
+    image: '/2025-03/sponsors/HarlowBlend.png',
+    link: 'https://harlowblend.com',
+  },
 ];

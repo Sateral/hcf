@@ -1,3 +1,6 @@
+'use client';
+
+import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -10,6 +13,7 @@ import { link } from 'fs';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Autoplay from 'embla-carousel-autoplay';
 
 const OurSponsors = () => {
   const sponsors = [
@@ -45,12 +49,18 @@ const OurSponsors = () => {
     },
   ];
 
+  const plugin = React.useRef(Autoplay({ delay: 2000 }));
+
   return (
     <div className="sm:px-16 px-8">
       <h2 className="font-caudex font-bold lg:text-7xl text-6xl sm:pb-6 pb-4 text-secondaryBg">
         Our <br /> <span className="text-primaryText">Sponsors</span>
       </h2>
-      <Carousel className="flex flex-col">
+      <Carousel
+        className="flex flex-col"
+        plugins={[plugin.current]}
+        opts={{ loop: true }}
+      >
         <CarouselContent>
           {sponsors.map((sponsor) => (
             <CarouselItem
