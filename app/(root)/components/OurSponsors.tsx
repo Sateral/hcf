@@ -49,7 +49,7 @@ const OurSponsors = () => {
     },
   ];
 
-  const plugin = React.useRef(Autoplay({ delay: 2000 }));
+  const plugin = React.useRef(Autoplay({ delay: 3000 }));
 
   return (
     <div className="sm:px-16 px-8">
@@ -59,7 +59,7 @@ const OurSponsors = () => {
       <Carousel
         className="flex flex-col"
         plugins={[plugin.current]}
-        opts={{ loop: true }}
+        opts={{ loop: true, align: 'start' }}
       >
         <CarouselContent>
           {sponsors.map((sponsor) => (
