@@ -9,7 +9,7 @@ import { ChevronLeftCircle, ChevronRightCircle, XCircle } from 'lucide-react';
 import Lightbox from '@/components/lightbox';
 
 const Page = () => {
-  const images = ['/2025-03/HCF_vendor list copy.jpg'];
+  const images = ['/2025-03/HCF_vendor list revised.jpg'];
 
   return (
     <>

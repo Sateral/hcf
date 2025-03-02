@@ -40,7 +40,8 @@ const Page = () => {
   const images = [
     '/2025-03/hcf_2025_flyer revised 1.jpg',
     '/2025-03/hcf_2025_flyer revised 2.jpg',
-    '/2025-03/HCF poster 2025.jpg',
+    '/2025-03/HCF event poster 2025.jpg',
+    '/2025-03/HCFevent poster 2025 2.jpg',
   ];
 
   return (

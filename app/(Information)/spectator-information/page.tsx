@@ -10,8 +10,8 @@ import Lightbox from '@/components/lightbox';
 
 const Page = () => {
   const images = [
-    '/2025-03/HCF_web coupon 2025.jpg',
-    '/2025-03/HCFevent poster 2025.jpg',
+    '/2025-03/HCF_web coupon 2025 revised.jpg',
+    '/2025-03/HCF event poster 2025.jpg',
   ];
 
   const downloadPDF = (path: string) => {
@@ -72,7 +72,6 @@ const Page = () => {
             </h2>
             <h3 className="text-2xl">Click on the flyers to expand</h3>
           </div>
-
           <div className="flex flex-row justify-center items-center md:gap-16 gap-8 sm:py-10 py-6 flex-wrap w-full">
             {/* <Lightbox className="flex justify-center items-center md:flex-row flex-col md:gap-16 gap-8 px-4 flex-wrap"> */}
             <Lightbox className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full justify-items-center">
