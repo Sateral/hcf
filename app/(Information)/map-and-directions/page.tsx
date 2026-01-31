@@ -3,16 +3,11 @@
 import Hero from '@/components/Hero';
 import React from 'react';
 import Image from 'next/image';
+import { downloadFile } from '@/lib/download';
 
 const page = () => {
   const mapDownload = () => {
-    const flyerEng = '/assets/map.jpg';
-    const link = document.createElement('a');
-    link.href = flyerEng;
-    link.setAttribute('download', 'Map_to_show.jpg');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    downloadFile('/assets/map.jpg', 'Map_to_show.jpg');
   };
 
   return (

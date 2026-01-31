@@ -2,6 +2,8 @@
 
 import Hero from '@/components/Hero';
 import React, { useEffect, useState } from 'react';
+import { downloadFile } from '@/lib/download';
+import { currentShow } from '@/constants/current-show';
 
 const Page = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -15,13 +17,10 @@ const Page = () => {
   }
 
   const downloadPdf = () => {
-    const pdfPath = '/assets/HAMILTON CAT FANCIERS vendor 2025.pdf';
-    const link = document.createElement('a');
-    link.href = pdfPath;
-    link.download = 'HAMILTON CAT FANCIERS vendor 2025.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    downloadFile(
+      currentShow.vendors.applicationPdf,
+      currentShow.vendors.applicationDownloadName
+    );
   };
 
   const vendorsAvailable = false;

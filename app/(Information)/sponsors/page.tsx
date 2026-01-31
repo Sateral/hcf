@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
 import Image from 'next/image';
-import { sponsors } from '@/constants';
 import React from 'react';
 import Link from 'next/link';
+import { currentShow } from '@/constants/current-show';
 
 const page = () => {
   return (
@@ -10,7 +10,7 @@ const page = () => {
       <Hero pageTitle="Sponsors of" sub="Hamilton Cat Fanciers" />
 
       <section className="flex flex-col justify-center items-center bg-[#E8EBF2] py-12 gap-8">
-        {sponsors.map((sponsor, i) => (
+        {currentShow.sponsors.map((sponsor) => (
           <Link href={sponsor.link} key={sponsor.sponsor}>
             <div className="flex flex-col md:flex-row justify-center items-center w-[850px] p-2 rounded-lg bg-white hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
               <Image

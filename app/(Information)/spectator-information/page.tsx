@@ -6,17 +6,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Lightbox from '@/components/lightbox';
 import { currentShow } from '@/constants/current-show';
+import { downloadFile } from '@/lib/download';
 
 const Page = () => {
   const images = [currentShow.coupon.image, ...currentShow.flyers.images];
 
   const downloadPDF = (path: string) => {
-    const link = document.createElement('a');
-    link.href = path;
-    link.setAttribute('download', currentShow.coupon.downloadName);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    downloadFile(path, currentShow.coupon.downloadName);
   };
 
   return (

@@ -4,15 +4,14 @@ import Image from 'next/image';
 import Hero from '@/components/Hero';
 import Lightbox from '@/components/lightbox';
 import { currentShow } from '@/constants/current-show';
+import { downloadFile } from '@/lib/download';
 
 const Page = () => {
   const downloadPoster = () => {
-    const link = document.createElement('a');
-    link.href = currentShow.flyers.posterPdf;
-    link.setAttribute('download', currentShow.flyers.posterDownloadName);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    downloadFile(
+      currentShow.flyers.posterPdf,
+      currentShow.flyers.posterDownloadName
+    );
   };
 
   return (

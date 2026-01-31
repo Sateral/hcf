@@ -8,6 +8,7 @@ import { MapPin } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { currentShow } from '@/constants/current-show';
+import { downloadFile } from '@/lib/download';
 
 const NextShow = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -21,12 +22,7 @@ const NextShow = () => {
   }
 
   const downloadCoupon = () => {
-    const link = document.createElement('a');
-    link.href = currentShow.coupon.pdf;
-    link.setAttribute('download', currentShow.coupon.downloadName);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    downloadFile(currentShow.coupon.pdf, currentShow.coupon.downloadName);
   };
 
   return (
