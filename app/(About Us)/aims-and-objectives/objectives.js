@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCat, faShieldCat, faPaw, faSquareCheck} from '@fortawesome/free-solid-svg-icons';
 
 export const Objectives = [
