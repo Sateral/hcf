@@ -5,11 +5,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, install dependencies and run the development server:
 
 ```bash
+# bun
 bun install
 bun run dev
-# or
+
+# npm
 npm install
 npm run dev
+
+# yarn
+yarn
+yarn dev
+
+# pnpm
+pnpm install
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
