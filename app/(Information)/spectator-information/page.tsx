@@ -1,23 +1,19 @@
 'use client';
 
-import { MouseEventHandler } from 'react';
 import Hero from '@/components/Hero';
 import Image from 'next/image';
 
-import { ChevronLeftCircle, ChevronRightCircle, XCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Lightbox from '@/components/lightbox';
+import { currentShow } from '@/constants/current-show';
 
 const Page = () => {
-  const images = [
-    '/2025-03/HCF_web coupon 2025 revised.jpg',
-    '/2025-03/HCF event poster 2025.jpg',
-  ];
+  const images = [currentShow.coupon.image, ...currentShow.flyers.images];
 
   const downloadPDF = (path: string) => {
     const link = document.createElement('a');
     link.href = path;
-    link.setAttribute('download', 'HCF_web coupon 2025.pdf');
+    link.setAttribute('download', currentShow.coupon.downloadName);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -43,7 +39,7 @@ const Page = () => {
               className="p-6 shrink-0"
               onClick={() =>
                 window.open(
-                  'https://www.eventbrite.ca/e/hamilton-cat-fanciers-cat-show-tickets-1204219716589?aff=oddtdtcreator',
+                  currentShow.ticketing.eventbrite,
                   '_blank'
                 )
               }
@@ -55,7 +51,7 @@ const Page = () => {
               className="p-6 shrink-0 bg-[#646464] hover:bg-[#3E3E3E]"
               onClick={() =>
                 window.open(
-                  'https://www.zeffy.com/en-CA/ticketing/ancaster-cat-show--2025?fbclid=IwY2xjawIXbx5leHRuA2FlbQIxMAABHQfeg9VYZjqIyePBsHTmR8vTGjZ_xe9GmGUvqSEENM4tdRMPTCBP1GzPZA_aem_Hi6NZ7rBgeuLlq5tovJpIA',
+                  currentShow.ticketing.zeffy,
                   '_blank'
                 )
               }
@@ -96,7 +92,7 @@ const Page = () => {
             <div className="flex flex-row gap-4">
               <Button
                 className="p-8"
-                onClick={() => downloadPDF('/2025-03/HCF_web coupon 2025.pdf')}
+                onClick={() => downloadPDF(currentShow.coupon.pdf)}
                 // className="border-secondaryBg border-2 sm:w-64 w-96 h-16 flex justify-center items-center rounded-full hover:bg-secondaryBg  hover:text-primaryBg transition ease-in-out cursor-pointer"
               >
                 <p className="font-kulim sm:text-2xl text-xl">

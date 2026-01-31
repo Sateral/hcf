@@ -1,15 +1,13 @@
 'use client';
 
-import { MouseEventHandler } from 'react';
-import useLightBoxModal from '@/hooks/use-lightbox-modal';
 import Hero from '@/components/Hero';
 import Image from 'next/image';
 
-import { ChevronLeftCircle, ChevronRightCircle, XCircle } from 'lucide-react';
 import Lightbox from '@/components/lightbox';
+import { currentShow } from '@/constants/current-show';
 
 const Page = () => {
-  const images = ['/2025-03/HCF_vendor list revised.jpg'];
+  const images = [currentShow.vendors.image];
 
   return (
     <>

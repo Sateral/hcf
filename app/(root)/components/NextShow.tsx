@@ -6,14 +6,8 @@ import { useEffect, useState } from 'react';
 import fairgrounds from '@/public/assets/fairgrounds.webp';
 import { MapPin } from 'lucide-react';
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import { currentShow } from '@/constants/current-show';
 
 const NextShow = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -27,10 +21,9 @@ const NextShow = () => {
   }
 
   const downloadCoupon = () => {
-    const flyerEng = '/2025-03/HCF_web coupon 2025.pdf';
     const link = document.createElement('a');
-    link.href = flyerEng;
-    link.setAttribute('download', 'AdmissionCoupon.pdf');
+    link.href = currentShow.coupon.pdf;
+    link.setAttribute('download', currentShow.coupon.downloadName);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -41,7 +34,7 @@ const NextShow = () => {
       <div className="flex-2 flex flex-col justify-center items-start md:ml-10 ml-0 md:mt-0 mt-10 md:order-1 order-2 md:px-0 ss:px-16 px-4">
         <div className="flex flex-row justify-center items-center text-secondaryBg font-alata">
           <MapPin size={24} />
-          <p className="text-xl">Ancaster Fairgrounds</p>
+          <p className="text-xl">{currentShow.venue.name}</p>
         </div>
 
         <Image
@@ -60,11 +53,10 @@ const NextShow = () => {
           </h2>
           <div className="md:text-4xl sm:text-xl text-lg">
             <p className="py-8">
-              Saturday, March 15 & Sunday, March 16 2025 at the Ancaster
-              Fairgrounds
+              {currentShow.dates.display} at the {currentShow.venue.name}
             </p>
             <p className="xl:mb-32 lg:mb-16 md:mb-4 mb-12">
-              630 Trinity Rd. (Hwy 52 & HWY 2)
+              {currentShow.venue.address}
             </p>
           </div>
 
