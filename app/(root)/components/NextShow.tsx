@@ -57,7 +57,7 @@ const NextShow = () => {
           </div>
 
           <Button
-            className="md:p-8 p-4 md:text-4xl text-xl"
+            className="md:text-2xl sm:text-xl text-lg hover:cursor-pointer text-center whitespace-normal break-words w-full sm:w-auto max-w-full px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 leading-tight h-auto min-h-0"
             onClick={downloadCoupon}
           >
             Click for Discount on Admission Coupon

@@ -43,7 +43,7 @@ const Page = () => {
             <div className="sm:pt-8 py-6 sm:text-2xl text-xl max-w-[950px]">
               <p className="font-light">
                 Join us at the Hamilton Cat Fanciers&apos; Annual Cat Show on
-                March 15-16, 2025, at ANCASTER FAIRGROUNDS. This family-friendly
+                March 21-22, 2026, at ANCASTER FAIRGROUNDS. This family-friendly
                 event, themed &apos;The Wizard of PAWZ,&apos; attracts 3000+
                 visitors. Showcase your products to a cat-loving audience and
                 benefit from active social media promotion. Download the PDF for

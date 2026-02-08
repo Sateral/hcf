@@ -13,8 +13,8 @@ function Donation() {
 
     useEffect(() => {
       if (inView) {
-        const targetAmount = 47775; // Replace with your target amount
-        const startAmount = 40000; // Replace with your starting amount
+        const targetAmount = 50125; // Replace with your target amount
+        const startAmount = 45000; // Replace with your starting amount
 
         const animationDuration = 1500; // Adjust the duration of the animation in milliseconds
         const frameRate = 10; // Adjust the frame rate of the animation in milliseconds
