@@ -26,23 +26,14 @@ const Page = () => {
               Buy Tickets
             </h2>
             <p className="text-2xl">
-              Purchase your electronic tickets for the event through Eventbrite
-              or Zeffy.
+              Purchase your electronic tickets for the event through Zeffy.
+            </p>
+            <p className="text-xl">
+              Use code SINGLE1 to save $1 off a single ticket or FAMILY2 to
+              save $2 off a family ticket.
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button
-              className="p-6 shrink-0"
-              onClick={() =>
-                window.open(
-                  currentShow.ticketing.eventbrite,
-                  '_blank'
-                )
-              }
-            >
-              <p className="font-kulim sm:text-xl text-lg">Buy on Eventbrite</p>
-            </Button>
-
             <Button
               className="p-6 shrink-0 bg-[#646464] hover:bg-[#3E3E3E]"
               onClick={() =>

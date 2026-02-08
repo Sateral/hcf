@@ -110,11 +110,9 @@ const Navbar = () => {
           <NavigationMenu className="md:mr-6 mr-2">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/">
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                  <Link href="/">Home</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -125,13 +123,15 @@ const Navbar = () => {
                 <NavigationMenuTrigger>Information</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   {navInfo.map((option) => (
-                    <Link key={option.id} href={option.id}>
-                      <NavigationMenuLink
-                        className={navigationMenuTriggerStyle()}
-                      >
+                    <NavigationMenuLink
+                      key={option.id}
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link href={option.id}>
                         {option.title}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   ))}
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -144,13 +144,15 @@ const Navbar = () => {
                 <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   {navAbout.map((option) => (
-                    <Link key={option.id} href={option.id}>
-                      <NavigationMenuLink
-                        className={navigationMenuTriggerStyle()}
-                      >
+                    <NavigationMenuLink
+                      key={option.id}
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link href={option.id}>
                         {option.title}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   ))}
                 </NavigationMenuContent>
               </NavigationMenuItem>
