@@ -15,8 +15,8 @@ export const currentShow = {
   },
   coupon: {
     image: "/2026-03/HCF 2026 discount.jpg",
-    pdf: "/2026-03/2026 HCF show flyer.pdf",
-    downloadName: "AdmissionCoupon.pdf",
+    pdf: "/2026-03/HCF 2026 discount.jpg",
+    downloadName: "AdmissionCoupon.jpg",
   },
   flyers: {
     images: [

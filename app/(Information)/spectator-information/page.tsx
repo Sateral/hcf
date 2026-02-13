@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Hero from '@/components/Hero';
-import Image from 'next/image';
+import Hero from "@/components/Hero";
+import Image from "next/image";
 
-import { Button } from '@/components/ui/button';
-import Lightbox from '@/components/lightbox';
-import { currentShow } from '@/constants/current-show';
-import { downloadFile } from '@/lib/download';
+import { Button } from "@/components/ui/button";
+import Lightbox from "@/components/lightbox";
+import { currentShow } from "@/constants/current-show";
+import { downloadFile } from "@/lib/download";
 
 const Page = () => {
   const images = [currentShow.coupon.image, ...currentShow.flyers.images];
@@ -29,19 +29,14 @@ const Page = () => {
               Purchase your electronic tickets for the event through Zeffy.
             </p>
             <p className="text-xl">
-              Use code SINGLE1 to save $1 off a single ticket or FAMILY2 to
-              save $2 off a family ticket.
+              Use code SINGLE1 to save $1 off a single ticket or FAMILY2 to save
+              $2 off a family ticket.
             </p>
           </div>
           <div className="flex flex-row gap-4">
             <Button
               className="p-6 shrink-0 bg-[#646464] hover:bg-[#3E3E3E]"
-              onClick={() =>
-                window.open(
-                  currentShow.ticketing.zeffy,
-                  '_blank'
-                )
-              }
+              onClick={() => window.open(currentShow.ticketing.zeffy, "_blank")}
             >
               <p className="font-kulim sm:text-xl text-lg">Buy on Zeffy</p>
             </Button>
